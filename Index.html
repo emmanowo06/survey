@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en"> 
+ <head>
+   <meta charset="UTF-8">
+   <title>Survey Form</title>
+   <link rel="stylesheet" href="styles.css"/>
+ </head>
+ <body>
+   <h1 id="title">Clinical Survey Form</h1>
+<p id="description">Thank you for sharing your experience on using Goshen GP</p>
+<form id="survey-form">
+ <label id="name-label">Enter Your Name
+   <input id="name" type="text" placeholder="eg James John" required />
+ </label>
+ <label id="email-label">Enter Email Address
+   <input id="email" type="email" placeholder="eg jamesjohn@yahoo.co.uk" required />
+ </label>
+ <label id="number-label">Enter your age
+   <input id="number" type="number" min="13" max="65" placeholder="eg 45"/>
+   </label>
+   <fieldset>
+     <legend>How did you know about this GP practice</legend>
+     <label>
+       <input type="radio" name="gp" value="website"
+class="inline"        
+       >NHS website
+     <input name="gp" type="radio" value="friend"
+class="inline">
+     Through a friend 
+     <input name="gp" type="radio" value="self"
+class="inline">By self,passing by
+     <input name="gp" type="radio" value="others"
+class="inline">Others
+     
+   
+     </label>
+   </fieldset>
+   <legend>As a client</legend>
+   <fieldset>
+ <label>
+   
+   How long have you use this practice (in months)?
+ </label>
+ <select id="dropdown">
+ <option value="">select one</option>
+ <option value="1">0-3
+</option>
+<option value="2">0-6
+</option>
+<option value="3">7-12
+</option>
+<option value="4">over a year
+</option>
+ </select>
+ </fieldset>
+<fieldset>
+ <label>
+ After initial registration, was GP reception meet your needs?
+ </label>
+ <input name="reception" type="radio" value="yes"
+class="inline">Yes
+ <input name="reception" type="radio" value="no"
+class="inline">No
+ <input type="text" placeholder="if No, state the needs not met"
+class="inline">
+ </label>
+ </fieldset>
+ <fieldset>
+ <label>
+   Were you informed of the GP's operational rules and regulations on registration?
+   <input type="checkbox" value="yes"
+class="inline">Yes
+   <input type="checkbox" value="no"
+class="inline">No
+ </label>
+ </fieldset>
+<fieldset>
+ <label>
+ How was making appointment to see GP?</label>
+ <input name="appointments" type="radio" value="fair"
+class="inline">fair
+ <input name="appointments" type="radio" value="easy"
+class="inline">easy
+ <input name="appointments" type="radio" value="very easy"
+class="inline">very easy
+ <input  name="appointments" type="radio" value="difficult"
+class="inline">difficult
+ <input name="appointments" type="radio" value="extremely difficult"
+class="inline">extremely difficult
+ </fieldset>
+ <fieldset>
+ <label>
+ Which method best suite you making appointment?</label>
+ <input name="method" type="radio" value="telephone"
+class="inline">direct telephone call
+ <input name="method" type="radio" value="email" class="inline">email
+ <input name="method" type="radio" value="text" class="inline">Text or sms message
+ <input name="method" type="radio" value="apps" class="inline"> a social media apps
+ <input name="method" type="radio" value="others"
+class="inline">others
+ </fieldset>
+ <fieldset>
+   <label>
+     How long does your appointment takes before been seen by your GP?<input name="duration" type="radio" value="same day" class="inline">same day
+     <input name="duration" type="radio" value="1 day" class="inline">1 day
+     <input name="duration" type="radio" value="2-7 days"
+class="inline">2-7 days
+     <input name="duration" type="radio" value="8-14 days"
+class="inline">8-14 days
+     <input name="duration" type="radio" value="over 14 days"
+class="inline">over 14 days
+     </label>
+     </fieldset>
+     <fieldset>
+       <label>Please state how long time it normaly takes you from home to get to GP appointment here         <input type="number" placeholder="in minutes"
+class="inline">
+       </label>
+     </fieldset>
+     <fieldset>
+   <label>Were your appointments kept timely
+     <input type="checkbox" value="yes"
+class="inline">Yes 
+     <input type="checkbox" value="no"
+ class="inline">No 
+     <input type="text" placeholder="if No please state intances and reasons"
+class="inline">
+     </label>
+   </fieldset>
+   <fieldset>
+   <label>Did the care and support from this practice help you have better quality of health?
+     <input type="checkbox" value="yes" class="inline">Yes
+     <input type="checkbox" value="no"
+class="inline">No. If No kindly explain
+     <input type="text" placeholder= "eg my backache unchanged after 3 months of visit"
+class="inline">
+     </label>
+   </fieldset>
+   <fieldset>
+     <label>Is the facilities within the practice adequate?
+       <input type="checkbox" value="yes"
+class="inline">Yes
+     <input type="checkbox" value="no"
+class="inline">No. If No, state which facility to provide 
+     <input type="text" placeholder=" eg number of toilets"
+class="inline">
+     </label>
+     
+
+   </fieldset>
+<fieldset>
+       <label>
+       What do you suggest this practice need to do to improve services
+       <textarea value="suggestion">
+       </textarea>
+       </label>
+       </fieldset>
+       <fieldset>
+       Please also indicate what you like best in this practice 
+       <input type="text" placeholder="eg timely appointments">
+       </fieldset> 
+ <input id="submit" type="submit" value="Submit">
+ </form>  
+ 
+ 
+ 
+ 
+ </body>
+ </html>
